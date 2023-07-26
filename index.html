@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="initial-scale=1">
+    <title>SyncFusionX</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="/static/styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="makerow">
+        <div class="subheading">
+            <h1>Welcome to SyncFusionX</h1>
+            <h2>Fully secure</h2>
+            <h3>Fully private</h3>
+            <h4>Easy to Use</h4>
+            <h5>30% Faster than other browsers</h5>
+            <input checked type="radio" id="google" class="engines" name="engines" value="google">
+            <label for="google">Google</label><br>
+            <input type="radio" id="bing" class="engines" name="engines" value="bing">
+            <label for="bing">Bing</label><br>
+            <input type="radio" id="duckduckgo" class="engines" name="engines" value="duckduckgo">
+            <label for="duckduckgo">DuckDuckGo</label>
+        </div>
+        <div class="weathercard">
+            <div class="weather">
+                <img src="images/rain.png" class=weather-icon>
+                <h1 class="temp">
+                    ... °C
+                </h1>
+                <p class="city">
+                    ...
+                </p>
+                <div class="details">
+                    <div class="col">
+                        <img src="images/humidity.png" class="detail-icon">
+                        <div>
+                            <p class="humidity">... %</p>
+                            <p class="detail-text">Humidity</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="images/wind.png" class="detail-icon">
+                        <div>
+                            <p class="wind">... Km/h</p>
+                            <p class="detail-text">Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form id="inputForm" onclick="check_engine()">
+        <input id="q" name="q" placeholder="Search..." type="text">
+        <button id="formButton" type="submit">
+            <img src="/static/searchBar.svg" />
+        </button>
+    </form>
+</body>
+<script src="/static/script.js"></script>
+</html>

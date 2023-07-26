@@ -1,0 +1,138 @@
+body {
+  background-color: coral;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  width: 100vw;
+  padding: 20px 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.makerow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto 50px;
+}
+
+input[type=radio] {
+            accent-color: coral;
+        }
+
+#inputForm {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+#q {
+  background-color: coral;
+  border: none;
+  outline: none;
+  width: 100%;
+  border-bottom: solid 1px #fff;
+  transition: all 0.2s ease-out;
+  caret-color: #fff;
+}
+
+#q[type="text"] {
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+
+#q:focus {
+  outline: none;
+  border-bottom: solid 1px #fff;
+}
+
+#q[type="text"]:focus {
+  font-size: 20px;
+  color: #fff;
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+#formButton {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+#formButton:hover {
+  transform: scale(0.7);
+}
+
+.weathercard {
+  width: 90%;
+  max-width: 300px;
+  background: linear-gradient(135deg, #fed8b1, #ffae42, #ff6700);
+  color: #fff;
+  margin-top: 20px;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.temp {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0 10px; */
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.weather-icon {
+  width: 150px;
+}
+
+.detail-icon{
+  padding: 0 20px;
+  width: 30px;
+}
+
+.detail-text {
+  font-size: 75%;
+  margin: 3px 0;
+}
+
+.humidity {
+  font-size: 75%;
+  margin: 3px 0;
+}
+
+.wind {
+  font-size: 75%;
+  margin: 3px 0;
+}
+
+.city {
+  margin-top: 0;
+  font-family: 'Kanit', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.weather {
+  display: none;
+}
